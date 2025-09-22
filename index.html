@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title> منصه - أسامه المحمدي</title>
+   <meta name="description" content="الموقع الرسمي @Osama-Academy - مطوّر ويب وأمن سيبراني محترف. خدمات تطوير الويب، تطبيقات آمنة، استشارات أمنية." />
+   <meta name="keywords" content="@Osama-Academy, مطور ويب, أمن سيبراني, أسامه المحمدي, تطوير مواقع, برمجة, حماية مواقع, مصر, دورات برمجة, كود, تعلم البرمجة, تطوير تطبيقات, أمن المعلومات, استشارات أمنية, اختبار الاختراق, تطوير واجهات, تطوير back-end, React, Node.js, JavaScript, HTML, CSS, تصميم مواقع, SEO, تحسين محركات البحث, استضافة مواقع, DevOps, تطوير برمجيات, حلول تقنية, برمجة آمنة, تشفير البيانات, حماية البيانات, منع الاختراق, أمن الشبكات, تطوير متجر إلكتروني, ووردبريس, Laravel, PHP, Python, تطوير جافا سكريبت" />
+   <link rel="canonical" href="https://devolepor.github.io/Osama-Academy/" />
+   <meta name="robots" content="index,follow" />
+   
+   <!-- بيانات مُنظّمة لتحسين محركات البحث -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Person",
+     "name": "أسامه المحمدي",
+     "alternateName": "أسامه المحمدي",
+     "url": "https://devolepor.github.io/Osama-Academy/",
+     "image": "https://devolepor.github.io/Osama-Academy/@Osama-Academy.jpg",
+     "jobTitle": " مدرس لغه عربيه وعلوم النحو",
+     "worksFor": {
+       "@type": "Organization",
+       "name": "مستقل"
+     },
+     "address": {
+       "@type": "PostalAddress",
+       "addressRegion": "Sharkia",
+       "addressCountry": "Egypt"
+     },
+     "sameAs": [
+       "https://www.facebook.com/asamtahmdalmhmdy",
+       "https://t.me/Osama-Academy",
+       "https://www.instagram.com/Osama-Academy",
+       "https://www.linkedin.com/in/mahmoud-mohamed-b5153a35b"
+     ]
+   }
+   </script>
+
+   <!-- Open Graph -->
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="@Osama-Academy | أسامه المحمدي - مطور ويب وأمن سيبراني" />
+   <meta property="og:description" content="الموقع الرسمي @Osama-Academy - مطوّر ويب وأمن سيبراني محترف. خدمات تطوير الويب، تطبيقات آمنة، استشارات أمنية." />
+   <meta property="og:url" content="https://devolepor.github.io/Osama-Academy/" />
+   <meta property="og:image" content="https://devolepor.github.io/Osama-Academy/@Osama-Academy.jpg" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="og:locale" content="ar_EG" />
+   <meta property="og:site_name" content="أسامه المحمدي" />
+
+   <!-- Twitter -->
+   <meta name="twitter:card" content="summary_large_image" />
+   <meta name="twitter:title" content="@Osama-Academy | أسامه المحمدي - مطور ويب وأمن سيبراني" />
+   <meta name="twitter:description" content="الموقع الرسمي @Osama-Academy - مطوّر ويب وأمن سيبراني محترف." />
+   <meta name="twitter:image" content="https://devolepor.github.io/Osama-Academy/@Osama-Academy.jpg" />
+   <meta name="twitter:creator" content="أسامه المحمدي" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-white: #FFFFFF;
+            --secondary-light: #E6F4F9;
+            --accent-medium: #A9D6E5;
+            --primary-blue: #61A5C2;
+            --dark-blue: #01497C;
+            --light-gray: #F5F5F5;
+            --dark-gray: #555555;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--primary-white);
+            color: var(--dark-gray);
+            transition: all 0.3s ease;
+        }
+        .fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* تأثيرات إضافية للصورة */
+#home img {
+    transition: transform 0.5s ease;
+}
+
+#home img:hover {
+    transform: scale(1.02);
+}
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        
+        .tree-branch {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        .tree-branch::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-medium));
+            border-radius: 2px;
+            transform: translateY(-50%);
+        }
+        
+        .grade-node {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .grade-node:hover {
+            transform: translateY(-50%) scale(1.1);
+            background-color: var(--dark-blue);
+        }
+        
+        .sidebar {
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .sidebar.open {
+            transform: translateX(0);
+        }
+        
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: none;
+        }
+        
+        .video-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .teacher-image {
+            border: 5px solid var(--accent-medium);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .delay-3 { animation-delay: 0.6s; opacity: 0; }
+        .delay-4 { animation-delay: 0.8s; opacity: 0; }
+        
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- إشعار للضيوف -->
+    <div id="guestNotification" class="notification">
+        <p>للاستفادة من المنصة بالكامل، يرجى التسجيل أو تسجيل الدخول</p>
+        <button onclick="closeNotification()" class="absolute top-2 left-2 text-white">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button id="menuToggle" class="lg:hidden text-2xl text-blue-600">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="text-2xl font-bold text-blue-800">أسامة المحمدي</div>
+                <div class="hidden md:block text-sm text-gray-600">أكاديميتك الرقمية</div>
+            </div>
+            
+            <div class="hidden lg:flex space-x-4 space-x-reverse">
+                <a href="#home" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">الرئيسية</a>
+                <a href="#about" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">ماذا عنا</a>
+                <a href="#contact" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">التواصل</a>
+                <a href="#courses" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">الكورسات</a>
+                <a href="#posts" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">المنشورات</a>
+                <a href="#connect" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition">تواصل معانا</a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+              
+                
+                <!-- أزرار تسجيل الدخول/إنشاء حساب أو صورة المستخدم -->
+                <div id="authButtons" class="flex space-x-2 space-x-reverse">
+                    <button onclick="openLoginModal()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">تسجيل دخول</button>
+                    <button onclick="openSignupModal()" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition">إنشاء حساب</button>
+                </div>
+                
+                <div id="userProfile" class="hidden items-center space-x-2 space-x-reverse">
+                    <img id="userAvatar" src="https://i.pinimg.com/736x/5f/b4/6a/5fb46a2560c5816de1c0c90c58a81d98.jpg" alt="صورة المستخدم" class="w-10 h-10 rounded-full border-2 border-blue-500">
+                    <span id="userName" class="text-blue-700 font-medium"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- القائمة الجانبية للهواتف -->
+    <div id="sidebar" class="sidebar fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-40 lg:hidden">
+        <div class="p-4 border-b">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-blue-800">أسامة المحمدي</div>
+                <button id="closeMenu" class="text-2xl text-gray-600">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="p-4 flex flex-col space-y-4">
+            <a href="#home" class="py-2 text-blue-700 hover:text-blue-900 transition">الرئيسية</a>
+            <a href="#about" class="py-2 text-blue-700 hover:text-blue-900 transition">ماذا عنا</a>
+            <a href="#contact" class="py-2 text-blue-700 hover:text-blue-900 transition">التواصل</a>
+            <a href="#courses" class="py-2 text-blue-700 hover:text-blue-900 transition">الكورسات</a>
+            <a href="#posts" class="py-2 text-blue-700 hover:text-blue-900 transition">المنشورات</a>
+            <div class="pt-4 border-t">
+                <button onclick="openLoginModal()" class="w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mb-2">تسجيل دخول</button>
+                <button onclick="openSignupModal()" class="w-full py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition">إنشاء حساب</button>
+            </div>
+        </div>
+    </div>
+
+  <section id="home" class="py-24 bg-gradient-to-l  to-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+            <!-- النصف الأيسر: نص الترحيب -->
+            <div class="lg:w-1/2 mb-16 lg:mb-0 fade-in">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-6 leading-tight">أسامة المحمدي</h1>
+                <p class="text-2xl md:text-3xl text-blue-700 mb-8 font-semibold">مدرس اللغة العربية ومميز في علم النحو</p>
+                <p class="text-xl text-gray-700 mb-10 leading-relaxed max-w-2xl">
+                    مرحباً بكم في منصتي التعليمية، حيث نسعى لتقديم أفضل المحتوى التعليمي في اللغة العربية 
+                    بطريقة مبسطة وممتعة تناسب جميع المستويات. نركز على تعليم النحو بطريقة عملية 
+                    تسهل فهم القواعد وتطبيقها في الحياة اليومية.
+                </p>
+                <div class="flex space-x-6 space-x-reverse mt-10">
+                    <button onclick="openSignupModal()" class="px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        انضم إلينا
+                    </button>
+                    <button onclick="scrollToSection('courses')" class="px-8 py-4 bg-blue-100 text-blue-700 rounded-xl hover:bg-blue-200 transition font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        استعرض الكورسات
+                    </button>
+                </div>
+                
+                <!-- إحصائيات إضافية -->
+                <div class="flex space-x-8 space-x-reverse mt-12 pt-8 border-t border-gray-200">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600">+500</div>
+                        <div class="text-gray-600">طالب مسجل</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600">+50</div>
+                        <div class="text-gray-600">درس متاح</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600">98%</div>
+                        <div class="text-gray-600">رضى الطلاب</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- النصف الأيمن: صورة المعلم -->
+            <div class="lg:w-1/2 flex justify-center fade-in delay-1">
+                <div class="relative">
+                    <div class="">
+                        <img src="https://i.pinimg.com/736x/e7/76/11/e77611424426ba1622ca1bfd9bbc4bed.jpg" 
+                             alt="صورة المعلم أسامة المحمدي" 
+                             class="w-96 h-96 object-cover ">
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl shadow-xl">
+                        <i class="fas fa-star mr-2"></i>مدرس معتمد
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="educational-map" class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12 fade-in">الخريطة التعليمية</h2>
+        
+        <div class="relative flex justify-center">
+            <!-- جذع الشجرة المميز -->
+            <div class="absolute top-0 bottom-0 w-6 bg-gradient-to-b from-yellow-700 via-yellow-600 to-yellow-800 rounded-lg shadow-2xl z-0">
+                <!-- نسيج الخشب -->
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMCAyMEgyME0xMCAwVjQwTTAgMzBIMjBNMCAxMEgyME0xMCAxMFY1MCIgc3Ryb2tlPSJyZ2JhKDE1MCwgMTAwLCA1MCwgMC4zKSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+')] opacity-30 rounded-lg"></div>
+            </div>
+            
+            <!-- فروع الشجرة المميزة -->
+            <div class="relative z-10 w-full max-w-6xl">
+                <!-- فرع الإعدادي -->
+                <div class="flex justify-between mb-24 relative">
+                    <!-- خطوط الفروع -->
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent opacity-50"></div>
+                    
+                    <!-- خطوط متفرعة من الجذع إلى الصناديق -->
+                    <div class="absolute top-0 left-1/4 w-1/4 h-24 border-t-2 border-r-2 border-yellow-600 border-dashed rounded-tr-3xl opacity-70"></div>
+                    <div class="absolute top-0 left-1/2 w-0 h-24 border-t-2 border-yellow-600 border-dashed opacity-70"></div>
+                    <div class="absolute top-0 left-3/4 w-1/4 h-24 border-t-2 border-l-2 border-yellow-600 border-dashed rounded-tl-3xl opacity-70"></div>
+                    
+                    <div class="text-center w-1/3 fade-in delay-1 pt-24">
+                        <div class="relative bg-gradient-to-br from-blue-500 to-indigo-700 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300 hover:rotate-1">
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">أولى إعدادي</h3>
+                            <p class="text-sm">أساسيات النحو والبلاغة</p>
+                            <div class="mt-3 pt-3 border-t border-blue-300 border-dashed">
+                                <span class="text-xs bg-blue-400 px-2 py-1 rounded-full">12 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center w-1/3 fade-in delay-2 pt-24">
+                        <div class="relative bg-gradient-to-br from-blue-500 to-indigo-700 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300">
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">تانية إعدادي</h3>
+                            <p class="text-sm">قواعد متقدمة في النحو</p>
+                            <div class="mt-3 pt-3 border-t border-blue-300 border-dashed">
+                                <span class="text-xs bg-blue-400 px-2 py-1 rounded-full">15 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center w-1/3 fade-in delay-3 pt-24">
+                        <div class="relative bg-gradient-to-br from-blue-500 to-indigo-700 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300 hover:-rotate-1">
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">تالتة إعدادي</h3>
+                            <p class="text-sm">الإعداد لمرحلة الثانوية</p>
+                            <div class="mt-3 pt-3 border-t border-blue-300 border-dashed">
+                                <span class="text-xs bg-blue-400 px-2 py-1 rounded-full">18 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فرع الثانوي -->
+                <div class="flex justify-between relative">
+                    <!-- خطوط الفروع -->
+                    <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-600 to-transparent opacity-50"></div>
+                    
+                    <!-- خطوط متفرعة من الجذع إلى الصناديق -->
+                    <div class="absolute bottom-24 left-1/4 w-1/4 h-24 border-b-2 border-r-2 border-yellow-600 border-dashed rounded-br-3xl opacity-70"></div>
+                    <div class="absolute bottom-24 left-1/2 w-0 h-24 border-b-2 border-yellow-600 border-dashed opacity-70"></div>
+                    <div class="absolute bottom-24 left-3/4 w-1/4 h-24 border-b-2 border-l-2 border-yellow-600 border-dashed rounded-bl-3xl opacity-70"></div>
+                    
+                    <div class="text-center w-1/3 fade-in delay-1 pb-24">
+                        <div class="relative bg-gradient-to-br from-green-600 to-emerald-800 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300 hover:rotate-1">
+                            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">أولى ثانوي</h3>
+                            <p class="text-sm">نصوص أدبية وتحليلها</p>
+                            <div class="mt-3 pt-3 border-t border-green-300 border-dashed">
+                                <span class="text-xs bg-green-500 px-2 py-1 rounded-full">20 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center w-1/3 fade-in delay-2 pb-24">
+                        <div class="relative bg-gradient-to-br from-green-600 to-emerald-800 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300">
+                            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">تانية ثانوي</h3>
+                            <p class="text-sm">البلاغة والعروض</p>
+                            <div class="mt-3 pt-3 border-t border-green-300 border-dashed">
+                                <span class="text-xs bg-green-500 px-2 py-1 rounded-full">22 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center w-1/3 fade-in delay-3 pb-24">
+                        <div class="relative bg-gradient-to-br from-green-600 to-emerald-800 text-white p-6 rounded-2xl shadow-2xl mx-auto w-64 transform hover:scale-105 transition duration-300 hover:-rotate-1">
+                            <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-white shadow-lg"></div>
+                            <h3 class="font-bold text-xl mb-2">تالتة ثانوي</h3>
+                            <p class="text-sm">الإعداد للجامعة</p>
+                            <div class="mt-3 pt-3 border-t border-green-300 border-dashed">
+                                <span class="text-xs bg-green-500 px-2 py-1 rounded-full">25 درسًا</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- أوراق الشجرة الزخرفية -->
+        <div class="absolute top-10 left-10 w-16 h-16 bg-green-500 rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute top-20 right-20 w-12 h-12 bg-green-400 rounded-full opacity-30 animate-pulse delay-100"></div>
+        <div class="absolute bottom-20 left-20 w-14 h-14 bg-green-500 rounded-full opacity-25 animate-pulse delay-200"></div>
+        <div class="absolute bottom-10 right-10 w-10 h-10 bg-green-400 rounded-full opacity-30 animate-pulse delay-300"></div>
+    </div>
+</section>
+
+   <!-- قسم ماذا عنا -->
+<section id="about" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
+    <!-- عناصر زخرفية -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-10 right-10 w-24 h-24 bg-indigo-200 rounded-full opacity-30 animate-pulse delay-1000"></div>
+    <div class="absolute top-1/2 right-1/4 w-16 h-16 bg-blue-300 rounded-full opacity-25 animate-bounce"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4 fade-in">ماذا عنا</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <!-- الجزء الأيسر: الرسالة -->
+            <div class="fade-in">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50 transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-bullhorn text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mr-4">رسالتنا</h3>
+                    </div>
+                    
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        نهدف إلى تبسيط اللغة العربية وقواعدها للطلاب بجميع مراحلهم التعليمية، 
+                        وجعل عملية التعلم تجربة ممتعة ومفيدة في نفس الوقت. نؤمن بأن كل طالب 
+                        قادر على إتقان اللغة العربية إذا قدمت له بالطريقة الصحيحة.
+                    </p>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-100">
+                        <ul class="space-y-4">
+                            <li class="flex items-start group">
+                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700 font-medium pt-1">شرح مبسط لقواعد النحو والصرف</span>
+                            </li>
+                            <li class="flex items-start group">
+                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700 font-medium pt-1">تمارين تفاعلية لتطبيق القواعد</span>
+                            </li>
+                            <li class="flex items-start group">
+                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                                <span class="text-gray-700 font-medium pt-1">مناهج مصممة خصيصاً لكل مرحلة تعليمية</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- الجزء الأيمن: لماذا نتميز -->
+            <div class="fade-in delay-1">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50">
+                    <div class="flex items-center mb-8">
+                        <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <i class="fas fa-star text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-blue-800 mr-4">لماذا نتميز؟</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- بطاقة الخبرة -->
+                        <div class="bg-gradient-to-r from-white to-blue-50/50 p-5 rounded-xl shadow-md border border-blue-100 transform hover:scale-105 transition-all duration-300 group">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform">
+                                    <i class="fas fa-graduation-cap text-blue-600 text-lg"></i>
+                                </div>
+                                <h4 class="font-bold text-blue-700 text-xl">خبرة طويلة</h4>
+                            </div>
+                            <p class="text-gray-600 pr-16">أكثر من 10 سنوات في تدريس اللغة العربية بمختلف المراحل</p>
+                            <div class="absolute top-4 left-4 text-6xl text-blue-100 font-bold opacity-60">01</div>
+                        </div>
+                        
+                        <!-- بطاقة النهج التفاعلي -->
+                        <div class="bg-gradient-to-r from-white to-green-50/50 p-5 rounded-xl shadow-md border border-green-100 transform hover:scale-105 transition-all duration-300 group">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform">
+                                    <i class="fas fa-users text-green-600 text-lg"></i>
+                                </div>
+                                <h4 class="font-bold text-green-700 text-xl">نهج تفاعلي</h4>
+                            </div>
+                            <p class="text-gray-600 pr-16">تفاعل مباشر مع الطلاب وتقديم تغذية راجعة فورية</p>
+                            <div class="absolute top-4 left-4 text-6xl text-green-100 font-bold opacity-60">02</div>
+                        </div>
+                        
+                        <!-- بطاقة المنصة المتكاملة -->
+                        <div class="bg-gradient-to-r from-white to-purple-50/50 p-5 rounded-xl shadow-md border border-purple-100 transform hover:scale-105 transition-all duration-300 group">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform">
+                                    <i class="fas fa-mobile-alt text-purple-600 text-lg"></i>
+                                </div>
+                                <h4 class="font-bold text-purple-700 text-xl">منصة متكاملة</h4>
+                            </div>
+                            <p class="text-gray-600 pr-16">تصميم متجاوب يعمل على جميع الأجهزة بشكل سلس</p>
+                            <div class="absolute top-4 left-4 text-6xl text-purple-100 font-bold opacity-60">03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- قسم إضافي للإحصائيات -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
+                <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
+                <div class="text-gray-600 font-medium">سنوات خبرة</div>
+            </div>
+            <div class="text-center bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
+                <div class="text-3xl font-bold text-green-600 mb-2">500+</div>
+                <div class="text-gray-600 font-medium">طالب مسجل</div>
+            </div>
+            <div class="text-center bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
+                <div class="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                <div class="text-gray-600 font-medium">درس متاح</div>
+            </div>
+            <div class="text-center bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
+                <div class="text-3xl font-bold text-orange-600 mb-2">98%</div>
+                <div class="text-gray-600 font-medium">رضى الطلاب</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- قسم الكورسات -->
+ <section id="courses" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <!-- عناصر زخرفية -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-y-32 translate-x-32"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-indigo-200 rounded-full opacity-10 -translate-x-40 translate-y-40"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4 fade-in">الكورسات التعليمية</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in delay-1">
+                اكتشف مجموعة كورساتنا المصممة خصيصاً لكل مرحلة تعليمية، مع فيديوهات شرح مفصلة وتمارين تطبيقية
+            </p>
+        </div>
+        
+        <!-- فلاتر التصنيف الرئيسية -->
+        <div class="flex flex-wrap justify-center gap-4 mb-6 fade-in delay-2">
+            <button class="filter-btn px-6 py-3 bg-blue-600 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 active" data-filter="all">
+                جميع الكورسات
+            </button>
+            <button class="filter-btn px-6 py-3 bg-white text-blue-700 border border-blue-200 rounded-xl font-medium transition-all duration-300 transform hover:scale-105" data-filter="middle">
+                المرحلة الإعدادية
+            </button>
+            <button class="filter-btn px-6 py-3 bg-white text-green-700 border border-green-200 rounded-xl font-medium transition-all duration-300 transform hover:scale-105" data-filter="high">
+                المرحلة الثانوية
+            </button>
+        </div>
+        
+        <!-- فلاتر التصنيف الفرعية - تظهر عند اختيار مرحلة -->
+        <div id="subFilters" class="flex flex-wrap justify-center gap-3 mb-8 fade-in delay-3 hidden">
+            <button class="sub-filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium transition-all duration-300 transform hover:scale-105" data-grade="all">
+                جميع الصفوف
+            </button>
+            <!-- سيتم تعبئتها ديناميكياً -->
+        </div>
+        
+        <!-- رسالة عندما لا توجد كورسات -->
+        <div id="noCoursesMessage" class="text-center hidden">
+            <div class="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto">
+                <i class="fas fa-book-open text-5xl text-gray-300 mb-4"></i>
+                <h3 class="text-xl font-bold text-gray-700 mb-2">لا توجد كورسات متاحة</h3>
+                <p class="text-gray-600">سيتم إضافة كورسات لهذا الصف قريباً</p>
+            </div>
+        </div>
+        
+        <div id="coursesContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- سيتم ملء الكورسات ديناميكياً -->
+            <div class="text-center col-span-3 py-12">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                <p class="text-gray-600">جاري تحميل الكورسات...</p>
+            </div>
+        </div>
+        
+        <!-- زر عرض المزيد -->
+        <div class="text-center mt-12 fade-in delay-6 hidden" id="loadMoreBtn">
+            <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                عرض المزيد من الكورسات <i class="fas fa-arrow-left mr-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- قسم المنشورات -->
+<section id="posts" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <!-- عناصر زخرفية -->
+    <div class="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-x-32 -translate-y-32"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-indigo-200 rounded-full opacity-10 translate-x-40 translate-y-40"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4 fade-in">أحدث المنشورات</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in delay-1">
+                اكتشف أحدث المقالات والنصائح التعليمية في اللغة العربية والنحو
+            </p>
+        </div>
+
+        <!-- فلاتر التصنيف -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12 fade-in delay-2">
+            <button class="filter-post-btn px-6 py-3 bg-blue-600 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 active" data-category="all">
+                جميع المنشورات
+            </button>
+            <button class="filter-post-btn px-6 py-3 bg-white text-blue-700 border border-blue-200 rounded-xl font-medium transition-all duration-300 transform hover:scale-105" data-category="grammar">
+                قواعد النحو
+            </button>
+            <button class="filter-post-btn px-6 py-3 bg-white text-green-700 border border-green-200 rounded-xl font-medium transition-all duration-300 transform hover:scale-105" data-category="tips">
+                نصائح تعليمية
+            </button>
+            <button class="filter-post-btn px-6 py-3 bg-white text-purple-700 border border-purple-200 rounded-xl font-medium transition-all duration-300 transform hover:scale-105" data-category="stories">
+                قصص تعليمية
+            </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="postsContainer">
+            <!-- المنشور 1 -->
+            <article class="post-card fade-in delay-3" data-category="grammar">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="قواعد النحو" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">قواعد النحو</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                            <div class="text-white text-sm">
+                                <i class="fas fa-clock mr-1"></i> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">أسرار الإعراب في اللغة العربية</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            اكتشف الطرق المبتكرة لفهم قواعد الإعراب بشكل سهل ومبسط. هذا المقال يقدم لك نصائح عملية لتسريع عملية التعلم.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex items-center">
+                                <img src="https://i.pinimg.com/736x/93/bf/d1/93bfd1c9bcce4b7b1ae589c94a0616e6.jpg" 
+                                     alt="أسامة المحمدي" 
+                                     class="w-8 h-8 rounded-full mr-3">
+                                <span class="text-gray-700 text-sm">أسامة المحمدي</span>
+                            </div>
+                            <span class="text-gray-500 text-sm">  </span>
+                        </div>
+                    </div>
+                    
+                    <div class="px-6 pb-6">
+                      
+                    </div>
+                </div>
+            </article>
+
+            <!-- المنشور 2 -->
+            <article class="post-card fade-in delay-4" data-category="tips">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1588072432836-100b94bfb19a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="نصائح تعليمية" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">نصائح تعليمية</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                            <div class="text-white text-sm">
+                                <i class="fas fa-clock mr-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">كيف تحبب طفلك في اللغة العربية؟</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            خمس استراتيجيات فعالة لجعل تعلم اللغة العربية تجربة ممتعة للأطفال. نصائح عملية من خبراء التعليم.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex items-center">
+                                <img src="https://i.pinimg.com/736x/93/bf/d1/93bfd1c9bcce4b7b1ae589c94a0616e6.jpg" 
+                                     alt="أسامة المحمدي" 
+                                     class="w-8 h-8 rounded-full mr-3">
+                                <span class="text-gray-700 text-sm">أسامة المحمدي</span>
+                            </div>
+                            <span class="text-gray-500 text-sm"> </span>
+                        </div>
+                    </div>
+                    
+                    <div class="px-6 pb-6">
+                      
+                    </div>
+                </div>
+            </article>
+
+            <!-- المنشور 3 -->
+            <article class="post-card fade-in delay-5" data-category="stories">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 border border-gray-100 h-full flex flex-col">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="قصص تعليمية" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">قصص تعليمية</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                            <div class="text-white text-sm">
+                                <i class="fas fa-clock mr-1"></i> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">رحلة طالب من الصفر إلى الإتقان</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            قصة ملهمة لطالب استطاع التغلب على صعوبات النحو وتحقيق نتائج مذهلة في وقت قياسي.
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-auto">
+                            <div class="flex items-center">
+                                <img src="https://i.pinimg.com/736x/93/bf/d1/93bfd1c9bcce4b7b1ae589c94a0616e6.jpg" 
+                                     alt="أسامة المحمدي" 
+                                     class="w-8 h-8 rounded-full mr-3">
+                                <span class="text-gray-700 text-sm">أسامة المحمدي</span>
+                            </div>
+                            <span class="text-gray-500 text-sm"> </span>
+                        </div>
+                    </div>
+                    
+                    <div class="px-6 pb-6">
+                       
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- زر تحميل المزيد -->
+        <div class="text-center mt-12 fade-in delay-6">
+            <button class="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl font-medium text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+            </button>
+        </div>
+    </div>
+</section>
+
+  <!-- قسم التواصل -->
+<section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
+    <!-- عناصر زخرفية -->
+    <div class="absolute top-10 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-10 right-10 w-32 h-32 bg-indigo-200 rounded-full opacity-30 animate-pulse delay-1000"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4 fade-in">تواصل معنا</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full mb-4"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto fade-in delay-1">
+                نحن هنا لمساعدتك! تواصل معنا لأي استفسار أو لتسجيل في الكورسات
+            </p>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
+            <!-- النصف الأيسر: صورة المدرس ومعلومات التواصل -->
+            <div class="lg:w-1/2 fade-in">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50">
+                    <div class="text-center mb-8">
+                        <div class="relative inline-block">
+                            <img src="https://i.pinimg.com/736x/e7/76/11/e77611424426ba1622ca1bfd9bbc4bed.jpg" 
+                                 alt="المدرس أسامة المحمدي" 
+                                 class="w-48 h-48 rounded-full object-cover mx-auto shadow-2xl border-4 border-white">
+                            <div class="absolute -bottom-2 -right-2 bg-green-500 text-white p-2 rounded-full shadow-lg">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-blue-800 mt-6">أسامة المحمدي</h3>
+                        <p class="text-gray-600">مدرس اللغة العربية المتخصص</p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition duration-300">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">رقم الهاتف</p>
+                                <p class="font-bold text-blue-700">+201123961290</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center p-4 bg-green-50 rounded-xl hover:bg-green-100 transition duration-300">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center ml-4">
+                                <i class="fab fa-whatsapp text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">واتساب</p>
+                                <p class="font-bold text-green-700">+201123961290 </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition duration-300">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">العنوان</p>
+                                <p class="font-bold text-purple-700">مصر / الشرقيه</p>
+                            </div>
+                        
+                        <div class="flex items-center p-4 bg-orange-50 rounded-xl hover:bg-orange-100 transition duration-300">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-clock text-orange-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-600 text-sm">أوقات العمل</p>
+                                <p class="font-bold text-orange-700">يرجي التواصل لتخصيص الوقت </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <h4 class="font-bold text-gray-700 mb-4">تابعنا على:</h4>
+                        <div class="flex justify-center space-x-4 space-x-reverse">
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- النصف الأيمن: نموذج التواصل -->
+            <div class="lg:w-1/2 fade-in delay-1">
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">أرسل رسالة مباشرة</h3>
+                    <p class="text-gray-600 mb-6">سنرد عليك في أقرب وقت ممكن</p>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="contactName" class="block text-gray-700 mb-2 font-medium">الاسم الكامل *</label>
+                                <input type="text" id="contactName" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                                       placeholder="أدخل اسمك الكامل"
+                                       required>
+                            </div>
+                            
+                            <div>
+                                <label for="contactPhone" class="block text-gray-700 mb-2 font-medium">رقم الهاتف *</label>
+                                <input type="tel" id="contactPhone" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                                       placeholder="1234567890"
+                                       required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="contactGrade" class="block text-gray-700 mb-2 font-medium">الصف الدراسي</label>
+                            <select id="contactGrade" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                                <option value="">اختر الصف الدراسي</option>
+                                <option value="first-middle">أولى إعدادي</option>
+                                <option value="second-middle">تانية إعدادي</option>
+                                <option value="third-middle">تالتة إعدادي</option>
+                                <option value="first-high">أولى ثانوي</option>
+                                <option value="second-high">تانية ثانوي</option>
+                                <option value="third-high">تالتة ثانوي</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="contactMessage" class="block text-gray-700 mb-2 font-medium">الرسالة *</label>
+                            <textarea id="contactMessage" rows="5" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                                      placeholder="اكتب رسالتك هنا..."
+                                      required></textarea>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <input type="checkbox" id="contactAgree" class="w-4 h-4 text-blue-600 rounded focus:ring-blue-500 ml-2" required>
+                            <label for="contactAgree" class="text-gray-700 text-sm">
+                                أوافق على <a href="#" class="text-blue-600 hover:underline">شروط الخصوصية</a> و 
+                                <a href="#" class="text-blue-600 hover:underline">سياسة الاستخدام</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 rounded-xl font-medium text-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center justify-center">
+                            <i class="fab fa-whatsapp ml-2 text-xl"></i>
+                         إرسال
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- الفوتر -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">أسامة المحمدي</h3>
+                    <p class="text-blue-200">أكاديميتك الرقمية لتعليم اللغة العربية بتميز</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#about" class="text-blue-200 hover:text-white transition">ماذا عنا</a></li>
+                        <li><a href="#courses" class="text-blue-200 hover:text-white transition">الكورسات</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white transition">التواصل</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">تابعنا على</h3>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300">
+                <p>© 2025 منصة أسامة المحمدي التعليمية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md p-6 mx-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-blue-900">تسجيل الدخول</h3>
+                <button onclick="closeLoginModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label for="loginPhone" class="block text-gray-700 mb-2">رقم الهاتف</label>
+                    <input type="tel" id="loginPhone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="loginCode" class="block text-gray-700 mb-2">كود التفعيل</label>
+                    <input type="text" id="loginCode" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium">
+                    تسجيل الدخول
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- نافذة إنشاء حساب -->
+    <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-md p-6 mx-4 max-h-screen overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-blue-900">إنشاء حساب جديد</h3>
+                <button onclick="closeSignupModal()" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="signupForm">
+                <div class="mb-4">
+                    <label for="fullName" class="block text-gray-700 mb-2">الاسم الرباعي</label>
+                    <input type="text" id="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="school" class="block text-gray-700 mb-2">المدرسة</label>
+                    <input type="text" id="school" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 mb-2">رقم الهاتف</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="grade" class="block text-gray-700 mb-2">المرحلة التعليمية</label>
+                    <select id="grade" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <option value="">اختر المرحلة</option>
+                        <option value="أولى إعدادي">أولى إعدادي</option>
+                        <option value="تانية إعدادي">تانية إعدادي</option>
+                        <option value="تالتة إعدادي">تالتة إعدادي</option>
+                        <option value="أولى ثانوي">أولى ثانوي</option>
+                        <option value="تانية ثانوي">تانية ثانوي</option>
+                        <option value="تالتة ثانوي">تالتة ثانوي</option>
+                    </select>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="activationCode" class="block text-gray-700 mb-2">كود التفعيل</label>
+                    <div class="flex space-x-2 space-x-reverse">
+                        <input type="text" id="activationCode" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <button type="button" onclick="getActivationCode()" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition">
+                            الحصول على الكود
+                        </button>
+                    </div>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium">
+                    إنشاء الحساب
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+       // بيانات الكورسات الموسعة
+const sampleCourses = [
+    // المرحلة الإعدادية - أولى إعدادي
+    {
+        id: 1,
+        title: "شرح المبتدأ والخبر",
+        teacher: "أسامة المحمدي",
+        stage: "middle",
+        grade: "first-middle",
+        gradeText: "أولى إعدادي",
+        description: "شرح مفصل للمبتدأ والخبر مع أمثلة تطبيقية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1588072432836-100b94bfb19a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "15:30",
+        lessons: 8,
+        students: 245,
+        price: 0,
+        level: "مبتدئ"
+    },
+    {
+        id: 2,
+        title: "الإعراب والبناء في الأسماء",
+        teacher: "أسامة المحمدي",
+        stage: "middle",
+        grade: "first-middle",
+        gradeText: "أولى إعدادي",
+        description: "تعلم أساسيات الإعراب والبناء",
+        thumbnailUrl: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "25:20",
+        lessons: 15,
+        students: 178,
+        price: 0,
+        level: "مبتدئ"
+    },
+
+    // المرحلة الإعدادية - تانية إعدادي
+    {
+        id: 3,
+        title: "أنواع الخبر مع التطبيقات",
+        teacher: "أسامة المحمدي",
+        stage: "middle",
+        grade: "second-middle",
+        gradeText: "تانية إعدادي",
+        description: "شرح لأنواع الخبر مع تمارين تفاعلية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "22:15",
+        lessons: 12,
+        students: 189,
+        price: 99,
+        level: "متوسط"
+    },
+    {
+        id: 4,
+        title: "المفعول المطلق وأنواعه",
+        teacher: "أسامة المحمدي",
+        stage: "middle",
+        grade: "second-middle",
+        gradeText: "تانية إعدادي",
+        description: "شرح متقدم للمفعول المطلق",
+        thumbnailUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "30:45",
+        lessons: 18,
+        students: 221,
+        price: 129,
+        level: "متوسط"
+    },
+
+    // المرحلة الإعدادية - تالتة إعدادي
+    {
+        id: 5,
+        title: "الجملة الاسمية والفعليية",
+        teacher: "أسامة المحمدي",
+        stage: "middle",
+        grade: "third-middle",
+        gradeText: "تالتة إعدادي",
+        description: "مقارنة بين الجملة الاسمية والفعليية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "18:45",
+        lessons: 10,
+        students: 312,
+        price: 149,
+        level: "متقدم"
+    },
+
+    // المرحلة الثانوية - أولى ثانوي
+    {
+        id: 6,
+        title: "النصوص الأدبية وتحليلها",
+        teacher: "أسامة المحمدي",
+        stage: "high",
+        grade: "first-high",
+        gradeText: "أولى ثانوي",
+        description: "تحليل النصوص الأدبية بمنهجية علمية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "45:20",
+        lessons: 25,
+        students: 156,
+        price: 199,
+        level: "متقدم"
+    },
+
+    // المرحلة الثانوية - تانية ثانوي
+    {
+        id: 7,
+        title: "البلاغة العربية - المحسنات البديعية",
+        teacher: "أسامة المحمدي",
+        stage: "high",
+        grade: "second-high",
+        gradeText: "تانية ثانوي",
+        description: "دورة شاملة في المحسنات البديعية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "35:10",
+        lessons: 20,
+        students: 143,
+        price: 249,
+        level: "متقدم"
+    },
+
+    // المرحلة الثانوية - تالتة ثانوي
+    {
+        id: 8,
+        title: "الإعداد الشامل للثانوية العامة",
+        teacher: "أسامة المحمدي",
+        stage: "high",
+        grade: "third-high",
+        gradeText: "تالتة ثانوي",
+        description: "مراجعة شاملة لكل منهج اللغة العربية",
+        thumbnailUrl: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        duration: "60:30",
+        lessons: 35,
+        students: 287,
+        price: 399,
+        level: "متقدم"
+    }
+];
+
+// تعريف الصفوف لكل مرحلة
+const gradeLevels = {
+    'middle': [
+        { value: 'first-middle', text: 'أولى إعدادي' },
+        { value: 'second-middle', text: 'تانية إعدادي' },
+        { value: 'third-middle', text: 'تالتة إعدادي' }
+    ],
+    'high': [
+        { value: 'first-high', text: 'أولى ثانوي' },
+        { value: 'second-high', text: 'تانية ثانوي' },
+        { value: 'third-high', text: 'تالتة ثانوي' }
+    ]
+};
+
+// دالة لعرض الفلاتر الفرعية
+function showSubFilters(stage) {
+    const subFiltersContainer = document.getElementById('subFilters');
+    const grades = gradeLevels[stage] || [];
+    
+    if (grades.length > 0) {
+        subFiltersContainer.innerHTML = `
+            <button class="sub-filter-btn px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 active" data-grade="all">
+                جميع صفوف ${stage === 'middle' ? 'الإعدادية' : 'الثانوية'}
+            </button>
+            ${grades.map(grade => `
+                <button class="sub-filter-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium transition-all duration-300 transform hover:scale-105" data-grade="${grade.value}">
+                    ${grade.text}
+                </button>
+            `).join('')}
+        `;
+        subFiltersContainer.classList.remove('hidden');
+    } else {
+        subFiltersContainer.classList.add('hidden');
+    }
+}
+
+// دالة لعرض الكورسات
+function displayCourses(filteredCourses = sampleCourses) {
+    const container = document.getElementById('coursesContainer');
+    const noCoursesMessage = document.getElementById('noCoursesMessage');
+    
+    if (filteredCourses.length === 0) {
+        container.innerHTML = '';
+        noCoursesMessage.classList.remove('hidden');
+        return;
+    }
+    
+    noCoursesMessage.classList.add('hidden');
+    
+    container.innerHTML = filteredCourses.map(course => `
+        <div class="course-card fade-in" data-grade="${course.grade}">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                <div class="relative">
+                    <img src="${course.thumbnailUrl}" alt="${course.title}" class="w-full h-48 object-cover course-thumbnail">
+                    <div class="absolute top-4 right-4">
+                        <span class="grade-badge ${course.stage} text-white px-3 py-1 rounded-full text-sm font-medium">
+                            ${course.gradeText}
+                        </span>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white bg-black/50 px-2 py-1 rounded-lg">
+                        <i class="fas fa-clock mr-1"></i> ${course.duration}
+                    </div>
+                    ${course.price === 0 ? `
+                    <div class="absolute top-4 left-4 bg-green-500 text-white px-2 py-1 rounded-lg text-sm">
+                        مجاني
+                    </div>
+                    ` : ''}
+                </div>
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">${course.title}</h3>
+                    <p class="text-gray-600 mb-4">${course.description}</p>
+                    
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="flex items-center space-x-1 space-x-reverse">
+                                <i class="fas fa-play-circle text-blue-500"></i>
+                                <span class="text-gray-700">${course.lessons} درس</span>
+                            </div>
+                            <div class="flex items-center space-x-1 space-x-reverse">
+                                <i class="fas fa-users text-green-500"></i>
+                                <span class="text-gray-700">${course.students}</span>
+                            </div>
+                        </div>
+                        <div class="text-lg font-bold ${course.price === 0 ? 'text-green-600' : 'text-blue-600'}">
+                            ${course.price === 0 ? 'مجاني' : `₪${course.price}`}
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-3 space-x-reverse">
+                        <button class="flex-1 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition duration-300">
+                            ${course.price === 0 ? 'ابدأ التعلم' : 'اشترك الآن'}
+                        </button>
+                        <button class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                            <i class="fas fa-heart text-gray-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+// تهيئة الصفحة
+document.addEventListener('DOMContentLoaded', function() {
+    // عرض جميع الكورسات أولاً
+    displayCourses();
+    
+    // إضافة event listeners للفلاتر الرئيسية
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // إزالة النشاط من جميع الأزرار
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            // إضافة النشاط للزر المختار
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            
+            if (filter === 'all') {
+                document.getElementById('subFilters').classList.add('hidden');
+                displayCourses(sampleCourses);
+            } else {
+                showSubFilters(filter);
+                const filteredCourses = sampleCourses.filter(course => course.stage === filter);
+                displayCourses(filteredCourses);
+            }
+        });
+    });
+    
+    // إضافة event listener للفلاتر الفرعية (باستخدام event delegation)
+    document.getElementById('subFilters').addEventListener('click', function(e) {
+        if (e.target.classList.contains('sub-filter-btn')) {
+            // إزالة النشاط من جميع الأزرار الفرعية
+            document.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active'));
+            // إضافة النشاط للزر المختار
+            e.target.classList.add('active');
+            
+            const gradeFilter = e.target.getAttribute('data-grade');
+            const currentStage = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+            
+            if (gradeFilter === 'all') {
+                const filteredCourses = sampleCourses.filter(course => course.stage === currentStage);
+                displayCourses(filteredCourses);
+            } else {
+                const filteredCourses = sampleCourses.filter(course => course.grade === gradeFilter);
+                displayCourses(filteredCourses);
+            }
+        }
+    });
+});
+
+        // حالة التطبيق
+        let currentUser = null;
+        let isDarkMode = false;
+        let guestNotificationInterval;
+
+        // تهيئة التطبيق عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', function() {
+            checkUserLoginStatus();
+            loadCourses();
+            setupEventListeners();
+            startGuestNotificationTimer();
+            
+            // إضافة تأثيرات الظهور التدريجي للعناصر
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                el.style.opacity = '0';
+            });
+            
+            // تشغيل الرسوم المتحركة عند التمرير
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // إعداد مستمعي الأحداث
+        function setupEventListeners() {
+            // تبديل القائمة الجانبية للهواتف
+            document.getElementById('menuToggle').addEventListener('click', toggleSidebar);
+            document.getElementById('closeMenu').addEventListener('click', toggleSidebar);
+            
+            // تبديل الوضع الليلي/النهاري
+            document.getElementById('themeToggle').addEventListener('click', toggleDarkMode);
+            
+            // نماذج التسجيل والدخول
+            document.getElementById('loginForm').addEventListener('submit', handleLogin);
+            document.getElementById('signupForm').addEventListener('submit', handleSignup);
+            document.getElementById('contactForm').addEventListener('submit', handleContact);
+            
+            // إغلاق النماذج عند النقر خارجها
+            document.getElementById('loginModal').addEventListener('click', function(e) {
+                if (e.target === this) closeLoginModal();
+            });
+            
+            document.getElementById('signupModal').addEventListener('click', function(e) {
+                if (e.target === this) closeSignupModal();
+            });
+        }
+
+        // التحقق من حالة تسجيل الدخول
+        function checkUserLoginStatus() {
+            const savedUser = localStorage.getItem('currentUser');
+            if (savedUser) {
+                currentUser = JSON.parse(savedUser);
+                showUserProfile();
+            } else {
+                showAuthButtons();
+            }
+        }
+
+        // عرض أزرار التسجيل/الدخول
+        function showAuthButtons() {
+            document.getElementById('authButtons').classList.remove('hidden');
+            document.getElementById('userProfile').classList.add('hidden');
+        }
+
+        // عرض ملف المستخدم الشخصي
+        function showUserProfile() {
+            document.getElementById('authButtons').classList.add('hidden');
+            document.getElementById('userProfile').classList.remove('hidden');
+            
+            document.getElementById('userName').textContent = currentUser.fullName;
+            document.getElementById('userAvatar').src = currentUser.photoUrl || 'https://via.placeholder.com/100/61A5C2/FFFFFF?text=صورة';
+        }
+
+        // تبديل القائمة الجانبية
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        // تبديل الوضع الليلي/النهاري
+        function toggleDarkMode() {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode');
+            
+            const icon = document.querySelector('#themeToggle i');
+            if (isDarkMode) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+            
+            // حفظ التفضيل في localStorage
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        // فتح نافذة تسجيل الدخول
+        function openLoginModal() {
+            document.getElementById('loginModal').classList.remove('hidden');
+        }
+
+        // إغلاق نافذة تسجيل الدخول
+        function closeLoginModal() {
+            document.getElementById('loginModal').classList.add('hidden');
+        }
+
+        // فتح نافذة إنشاء حساب
+        function openSignupModal() {
+            document.getElementById('signupModal').classList.remove('hidden');
+        }
+
+        // إغلاق نافذة إنشاء حساب
+        function closeSignupModal() {
+            document.getElementById('signupModal').classList.add('hidden');
+        }
+
+        // معالجة تسجيل الدخول
+        function handleLogin(e) {
+            e.preventDefault();
+            
+            const phone = document.getElementById('loginPhone').value;
+            const code = document.getElementById('loginCode').value;
+            
+            // في التطبيق الحقيقي، سيتم التحقق من البيانات مع GitHub
+            // هنا نستخدم بيانات تجريبية للتوضيح
+            if (phone && code) {
+                // محاكاة عملية تسجيل الدخول الناجحة
+                currentUser = {
+                    fullName: "محمد أحمد",
+                    phone: phone,
+                    grade: "أولى إعدادي",
+                    photoUrl: "https://via.placeholder.com/100/61A5C2/FFFFFF?text=مستخدم"
+                };
+                
+                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                showUserProfile();
+                closeLoginModal();
+                
+                // إظهار رسالة نجاح
+                alert('تم تسجيل الدخول بنجاح!');
+            } else {
+                alert('يرجى ملء جميع الحقول');
+            }
+        }
+
+        // معالجة إنشاء حساب جديد
+        function handleSignup(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const school = document.getElementById('school').value;
+            const phone = document.getElementById('phone').value;
+            const grade = document.getElementById('grade').value;
+            const activationCode = document.getElementById('activationCode').value;
+            
+            if (!fullName || !school || !phone || !grade || !activationCode) {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // في التطبيق الحقيقي، سيتم التحقق من كود التفعيل مع GitHub
+            // هنا نستخدم محاكاة للتوضيح
+            currentUser = {
+                fullName: fullName,
+                school: school,
+                phone: phone,
+                grade: grade,
+                photoUrl: "https://via.placeholder.com/100/61A5C2/FFFFFF?text=صورة"
+            };
+            
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            showUserProfile();
+            closeSignupModal();
+            
+            // إظهار رسالة نجاح
+            alert('تم إنشاء الحساب بنجاح!');
+        }
+
+        // الحصول على كود التفعيل عبر واتساب
+        function getActivationCode() {
+            const fullName = document.getElementById('fullName').value;
+            
+            if (!fullName) {
+                alert('الاسم مطلوب للحصول على الكود');
+                return;
+            }
+            
+            const message = `مرحبًا، اسمي ${fullName}. أريد كود التفعيل لمنصة أسامة المحمدي.`;
+            const whatsappUrl = `https://wa.me/201123961290?text=${encodeURIComponent(message)}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // معالجة نموذج التواصل
+        function handleContact(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            if (!name || !phone || !message) {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            const fullMessage = `مرحبًا، أنا ${name} (${phone}). أود التواصل معكم بشأن: ${message}`;
+            const whatsappUrl = `https://wa.me/201123961290?text=${encodeURIComponent(fullMessage)}`;
+            
+            window.open(whatsappUrl, '_blank');
+            document.getElementById('contactForm').reset();
+            
+            alert('سيتم فتح واتساب لإرسال رسالتك. شكرًا لتواصلكم!');
+        }
+
+        // تحميل وعرض الكورسات
+        function loadCourses() {
+            const container = document.getElementById('coursesContainer');
+            
+            // مسح المحتوى الحالي
+            container.innerHTML = '';
+            
+            // إضافة الكورسات إلى الصفحة
+            sampleVideos.forEach(video => {
+                const videoCard = document.createElement('div');
+                videoCard.className = 'video-card bg-blue-50 rounded-lg overflow-hidden shadow-sm';
+                videoCard.innerHTML = `
+                    <img src="${video.thumbnailUrl}" alt="${video.title}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-blue-900">${video.title}</h3>
+                            <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">${video.duration}</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-3">${video.description}</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-700 font-medium">${video.teacher}</span>
+                            <span class="text-sm bg-blue-100 text-blue-700 px-2 py-1 rounded">${video.grade}</span>
+                        </div>
+                        <div class="mt-4">
+                            ${currentUser ? 
+                                `<button onclick="watchVideo(${video.id})" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">مشاهدة الفيديو</button>` :
+                                `<button onclick="openLoginModal()" class="w-full bg-gray-400 text-white py-2 rounded-lg cursor-not-allowed">سجّل الدخول لمشاهدة</button>`
+                            }
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(videoCard);
+            });
+        }
+
+        // مشاهدة الفيديو (للمستخدمين المسجلين فقط)
+        function watchVideo(videoId) {
+            if (!currentUser) {
+                openLoginModal();
+                return;
+            }
+            
+            // في التطبيق الحقيقي، سيتم فتح مشغل الفيديو
+            alert(`سيتم فتح الفيديو رقم ${videoId} للمستخدم ${currentUser.fullName}`);
+        }
+
+        // بدء مؤقت الإشعار للضيوف
+        function startGuestNotificationTimer() {
+            if (!currentUser) {
+                guestNotificationInterval = setInterval(() => {
+                    showGuestNotification();
+                }, 180000); // كل 3 دقائق
+            }
+        }
+
+        // إظهار إشعار للضيوف
+        function showGuestNotification() {
+            if (!currentUser) {
+                document.getElementById('guestNotification').style.display = 'block';
+                
+                // إخفاء الإشعار تلقائياً بعد 5 ثوان
+                setTimeout(() => {
+                    closeNotification();
+                }, 5000);
+            }
+        }
+
+        // إغلاق الإشعار
+        function closeNotification() {
+            document.getElementById('guestNotification').style.display = 'none';
+        }
+
+        // التمرير إلى قسم معين
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        // دالة لإرسال الرسالة عبر واتساب
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('contactName').value;
+    const phone = document.getElementById('contactPhone').value;
+    const grade = document.getElementById('contactGrade').value;
+    const message = document.getElementById('contactMessage').value;
+    
+    // تنظيف رقم الهاتف
+    const cleanPhone = phone.replace(/\D/g, '');
+    
+    // تحضير الرسالة
+    const gradeText = document.getElementById('contactGrade').options[document.getElementById('contactGrade').selectedIndex].text;
+    const whatsappMessage = `السلام عليكم، أنا ${name}${grade ? ` من ${gradeText}` : ''}.\n\n${message}`;
+    
+    // رابط واتساب
+    const whatsappUrl = `https://wa.me/201123961290?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // فتح واتساب في نافذة جديدة
+    window.open(whatsappUrl, '_blank');
+    
+    // إظهار رسالة نجاح
+    alert('سيتم فتح واتساب لإرسال رسالتك. شكراً لتواصلك معنا!');
+    
+    // إعادة تعيين النموذج
+    this.reset();
+});
+// فلترة المنشورات
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-post-btn');
+    const postCards = document.querySelectorAll('.post-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // إزالة النشاط من جميع الأزرار
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // إضافة النشاط للزر المختار
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-category');
+            
+            postCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+
+    // إضافة تأثيرات للقراءة
+    const readButtons = document.querySelectorAll('.post-card button');
+    readButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const postTitle = this.closest('.post-card').querySelector('h3').textContent;
+            alert(`سيتم فتح مقال: "${postTitle}" - هذه ميزة تجريبية`);
+        });
+    });
+
+    // زر تحميل المزيد
+    const loadMoreBtn = document.querySelector('.text-center.mt-12 button');
+    loadMoreBtn.addEventListener('click', function() {
+        this.innerHTML = '<i class="fas fa-spinner animate-spin mr-2"></i> جاري التحميل...';
+        setTimeout(() => {
+            alert('سيتم تحميل المزيد من المنشورات قريباً');
+            this.innerHTML = 'عرض المزيد من المنشورات <i class="fas fa-arrow-left mr-2"></i>';
+        }, 2000);
+    });
+});
+    </script>
+</body>
+</html>
