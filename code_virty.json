@@ -1,2 +1,35 @@
-
- [{ "code": "12345", "status": "unused" }]
+[
+    {
+        "phone": "+201123961290",
+        "code": "123456",
+        "name": "أسامة المحمدي",
+        "name_en": "Osama Al-Mohammadi",
+        "grade": "تالتة ثانوي",
+        "grade_en": "Third Secondary",
+        "school": "مدرسة الشرقية الثانوية",
+        "school_en": "Sharkia Secondary School",
+        "photoUrl": "https://i.pinimg.com/736x/e7/76/11/e77611424426ba1622ca1bfd9bbc4bed.jpg"
+    },
+    {
+        "phone": "+201234567890",
+        "code": "789012",
+        "name": "محمد أحمد",
+        "name_en": "Mohamed Ahmed",
+        "grade": "أولى إعدادي",
+        "grade_en": "First Preparatory",
+        "school": "مدرسة النصر الإعدادية",
+        "school_en": "Al-Nasr Preparatory School",
+        "photoUrl": "https://via.placeholder.com/100/61A5C2/FFFFFF?text=Mohamed"
+    },
+    {
+        "phone": "+201987654321",
+        "code": "456789",
+        "name": "فاطمة علي",
+        "name_en": "Fatima Ali",
+        "grade": "تانية ثانوي",
+        "grade_en": "Second Secondary",
+        "school": "مدرسة الزهراء الثانوية",
+        "school_en": "Al-Zahraa Secondary School",
+        "photoUrl": "https://via.placeholder.com/100/61A5C2/FFFFFF?text=Fatima"
+    }
+]
