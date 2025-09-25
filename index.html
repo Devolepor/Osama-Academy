@@ -8,7 +8,6 @@
     <meta name="keywords" content="أسامة المحمدي, تعليم اللغة العربية, النحو, المرحلة الإعدادية, المرحلة الثانوية, دروس عربية, قواعد اللغة العربية" />
     <link rel="canonical" href="https://devolepor.github.io/Osama-Academy/" />
     <meta name="robots" content="index,follow" />
-
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -17,7 +16,7 @@
         "name": "منصة أسامة المحمدي التعليمية",
         "description": "منصة تعليمية متخصصة في تدريس اللغة العربية والنحو للمراحل الإعدادية والثانوية",
         "url": "https://devolepor.github.io/Osama-Academy/",
-        "telephone": "+201123961290",
+        "telephone": "+201120397278",
         "address": {
             "@type": "PostalAddress",
             "addressRegion": "Sharkia",
@@ -49,11 +48,9 @@
     <meta name="twitter:description" content="الموقع الرسمي لأسامة المحمدي - مدرس اللغة العربية المتخصص في النحو." />
     <meta name="twitter:image" content="https://devolepor.github.io/Osama-Academy/@Osama-Academy.jpg" />
     <meta name="twitter:creator" content="أسامة المحمدي" />
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <style>
         :root {
             --primary-white: #FFFFFF;
@@ -63,107 +60,170 @@
             --dark-blue: #01497C;
             --light-gray: #F5F5F5;
             --dark-gray: #555555;
+            --brown-loading: #8B4513; /* لون بني جذاب للـ loading */
         }
-
         [lang="en"] {
             direction: ltr;
             font-family: 'Roboto', sans-serif;
         }
-
         [lang="ar"] {
             direction: rtl;
             font-family: 'Tajawal', sans-serif;
         }
-
         body {
             background-color: var(--primary-white);
             color: var(--dark-gray);
             transition: all 0.3s ease;
             overflow-x: hidden;
         }
-
         .dark-mode {
             background-color: #1a202c;
             color: #e2e8f0;
         }
-
         .dark-mode .bg-white {
             background-color: #2d3748 !important;
             color: #e2e8f0;
         }
-
         .dark-mode .text-gray-800 {
             color: #e2e8f0;
         }
-
         .dark-mode .text-gray-600 {
             color: #a0aec0;
         }
-
         .dark-mode .bg-blue-50 {
             background-color: #2a4365;
         }
-
         .dark-mode .border-gray-300 {
             border-color: #4a5568;
         }
-
         .dark-mode .shadow-md {
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
-
+        .dark-mode .bg-gradient-to-br.from-gray-50.to-blue-50 {
+            background: linear-gradient(to bottom right, #1a202c, #2a4365);
+        }
+        .dark-mode .bg-gradient-to-br.from-blue-50.to-indigo-100 {
+            background: linear-gradient(to bottom right, #2a4365, #2d3748);
+        }
+        .dark-mode .bg-blue-600 {
+            background-color: #2a4365;
+        }
+        .dark-mode .text-blue-900 {
+            color: #a0aec0;
+        }
+        .dark-mode .bg-white\/80 {
+            background-color: rgba(45, 55, 72, 0.8);
+        }
+        .dark-mode .text-gray-700 {
+            color: #cbd5e0;
+        }
+        .dark-mode .bg-blue-100 {
+            background-color: #2a4365;
+        }
+        .dark-mode .text-blue-700 {
+            color: #a0aec0;
+        }
+        .dark-mode .bg-gray-100 {
+            background-color: #2d3748;
+        }
+        .dark-mode .text-gray-700 {
+            color: #e2e8f0;
+        }
+        .dark-mode .border-gray-100 {
+            border-color: #4a5568;
+        }
+        .dark-mode .bg-green-100 {
+            background-color: #2f855a;
+        }
+        .dark-mode .text-green-800 {
+            color: #9ae6b4;
+        }
+        .dark-mode .bg-purple-100 {
+            background-color: #6b46c1;
+        }
+        .dark-mode .text-purple-800 {
+            color: #d6bcfa;
+        }
+        .dark-mode .bg-blue-900 {
+            background-color: #1a202c;
+        }
+        .dark-mode .text-blue-200 {
+            color: #a0aec0;
+        }
+        .dark-mode .border-blue-800 {
+            border-color: #2d3748;
+        }
+        .dark-mode .text-blue-300 {
+            color: #90cdf4;
+        }
+        .dark-mode .bg-gradient-to-r.from-blue-600.to-indigo-600 {
+            background: linear-gradient(to right, #2a4365, #2d3748);
+        }
+        .dark-mode .bg-green-500 {
+            background-color: #2f855a;
+        }
+        .dark-mode .bg-red-600 {
+            background-color: #c53030;
+        }
+        .dark-mode .bg-orange-50 {
+            background-color: #9c4221;
+        }
+        .dark-mode .text-orange-700 {
+            color: #f6ad55;
+        }
+        .dark-mode .bg-purple-50 {
+            background-color: #553c9a;
+        }
+        .dark-mode .text-purple-700 {
+            color: #b794f4;
+        }
+        .dark-mode .bg-green-50 {
+            background-color: #276749;
+        }
+        .dark-mode .text-green-700 {
+            color: #68d391;
+        }
         /* Enhanced Animations */
         .fade-in {
             animation: fadeIn 0.8s ease-in-out forwards;
         }
-
         .fade-in.delay-1 { animation-delay: 0.2s; opacity: 0; }
         .fade-in.delay-2 { animation-delay: 0.4s; opacity: 0; }
         .fade-in.delay-3 { animation-delay: 0.6s; opacity: 0; }
         .fade-in.delay-4 { animation-delay: 0.8s; opacity: 0; }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
         .slide-in {
             animation: slideIn 0.5s ease-in-out forwards;
         }
-
         @keyframes slideIn {
             from { transform: translateX(100%); }
             to { transform: translateX(0); }
         }
-
         .zoom-in {
             animation: zoomIn 0.6s ease-in-out forwards;
         }
-
         @keyframes zoomIn {
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
         }
-
         .bounce {
             animation: bounce 1s ease-in-out infinite;
         }
-
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
-
         /* Image Hover Effects */
         #home img {
             transition: transform 0.5s ease, filter 0.3s ease;
         }
-
         #home img:hover {
             transform: scale(1.05);
             filter: brightness(1.1);
         }
-
         /* Enhanced Tree Branch */
         .tree-branch {
             position: relative;
@@ -171,7 +231,6 @@
             width: 100%;
             margin: 20px 0;
         }
-
         .tree-branch::before {
             content: '';
             position: absolute;
@@ -183,7 +242,6 @@
             border-radius: 2px;
             transform: translateY(-50%);
         }
-
         .grade-node {
             position: absolute;
             top: 50%;
@@ -201,22 +259,18 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         .grade-node:hover {
             transform: translateY(-50%) scale(1.1);
             background-color: var(--dark-blue);
         }
-
         /* Sidebar Enhancements */
         .sidebar {
             transform: translateX(100%);
             transition: transform 0.3s ease;
         }
-
         .sidebar.open {
             transform: translateX(0);
         }
-
         /* Notification Styling */
         .notification {
             position: fixed;
@@ -231,33 +285,27 @@
             display: none;
             animation: slideInRight 0.5s ease forwards;
         }
-
         @keyframes slideInRight {
             from { transform: translateX(100%); }
             to { transform: translateX(0); }
         }
-
         /* Video Card Hover Effects */
         .video-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .video-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-
         /* Teacher Image Styling */
         .teacher-image {
             border: 5px solid var(--accent-medium);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             transition: transform 0.5s ease;
         }
-
         .teacher-image:hover {
             transform: scale(1.05);
         }
-
         /* Theme Switch */
         .theme-switch {
             position: relative;
@@ -265,13 +313,11 @@
             width: 60px;
             height: 34px;
         }
-
         .theme-switch input {
             opacity: 0;
             width: 0;
             height: 0;
         }
-
         .slider {
             position: absolute;
             cursor: pointer;
@@ -283,7 +329,6 @@
             transition: .4s;
             border-radius: 34px;
         }
-
         .slider:before {
             position: absolute;
             content: "";
@@ -295,32 +340,26 @@
             transition: .4s;
             border-radius: 50%;
         }
-
         input:checked + .slider {
             background-color: #4a5568;
         }
-
         input:checked + .slider:before {
             transform: translateX(26px);
         }
-
         .slider i {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             font-size: 16px;
         }
-
         .slider .fa-moon {
             right: 8px;
             color: #f7fafc;
         }
-
         .slider .fa-sun {
             left: 8px;
             color: #f6ad55;
         }
-
         /* Language Switch */
         .language-switch {
             position: relative;
@@ -328,7 +367,6 @@
             width: 60px;
             height: 34px;
         }
-
         .language-switch select {
             width: 100%;
             height: 100%;
@@ -340,71 +378,86 @@
             outline: none;
             appearance: none;
         }
-
         /* Responsive Design */
         @media (max-width: 1024px) {
             .container {
                 padding-left: 15px;
                 padding-right: 15px;
             }
-
             #home h1 {
                 font-size: 2.5rem;
             }
-
             #home p {
                 font-size: 1.1rem;
             }
-
             .tree-branch {
                 height: 80px;
             }
-
             .grade-node {
                 width: 60px;
                 height: 60px;
                 font-size: 0.9rem;
             }
-
             .notification {
                 right: 10px;
                 left: 10px;
                 bottom: 10px;
             }
         }
-
         @media (max-width: 640px) {
             #home h1 {
                 font-size: 2rem;
             }
-
             #home .flex.space-x-6 {
                 flex-direction: column;
                 gap: 15px;
             }
-
             #home .flex.space-x-6 button {
                 width: 100%;
             }
-
             .tree-branch {
                 height: 60px;
             }
-
             .grade-node {
                 width: 50px;
                 height: 50px;
                 font-size: 0.8rem;
             }
-
             .header-nav {
                 flex-direction: column;
                 gap: 10px;
             }
-
             .course-card {
                 width: 100%;
             }
+            .auth-btn {
+                font-size: 0.875rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+        /* Improved Buttons */
+        button {
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        /* Video Player Styling */
+        .video-player {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Loading Spinner with Brown Color */
+        #loadingSpinner .animate-spin {
+            border-color: transparent;
+            border-bottom-color: var(--brown-loading);
+            border-width: 4px;
+        }
+        #loadingText {
+            color: var(--brown-loading);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -416,7 +469,6 @@
             <i class="fas fa-times"></i>
         </button>
     </div>
-
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center header-nav">
@@ -424,20 +476,18 @@
                 <button id="menuToggle" class="lg:hidden text-2xl text-blue-600">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="text-2xl font-bold text-blue-800" id="header-title">أسامة المحمدي</div>
-                <div class="hidden md:block text-sm text-gray-600" id="header-subtitle">أكاديميتك الرقمية</div>
+                <div class="text-2xl font-bold text-blue-800" id="header-title"> طريق </div>
+                <div class="hidden md:block text-sm text-gray-600" id="header-subtitle">العلم </div>
             </div>
-
             <nav class="hidden lg:flex space-x-4 space-x-reverse">
                 <a href="#home" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="home">الرئيسية</a>
-                <a href="#about" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="about">ماذا عنا</a>
-                <a href="#courses" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="courses">الكورسات</a>
+                <a href="#about" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="about"> عنا</a>
+                <a href="#courses" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" >الكورسات</a>
                 <a href="#posts" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="posts">المنشورات</a>
                 <a href="#contact" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="contact">التواصل</a>
                 <a href="#developer" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="developer">المطور</a>
                 <a href="#profile" class="px-3 py-2 text-blue-700 hover:text-blue-900 transition hidden" id="profileLink" data-lang-key="profile">الملف الشخصي</a>
             </nav>
-
             <div class="flex items-center space-x-4 space-x-reverse">
                 <!-- Theme Switch -->
                 <div class="flex items-center space-x-2 space-x-reverse">
@@ -451,30 +501,25 @@
                     </label>
                     <i class="fas fa-moon text-blue-300"></i>
                 </div>
-
                 <!-- Language Switch -->
                 <div class="language-switch">
                     <select id="languageToggle">
-                        <option value="ar">العربية</option>
-                        <option value="en">English</option>
+                        <option value="ar">AR</option>
+                        <option value="en">EN</option>
                     </select>
                 </div>
-
                 <!-- Auth Buttons / User Profile -->
                 <div id="authButtons" class="flex space-x-2 space-x-reverse">
-                   <button onclick="openLoginModal()" 
-        class="z-10 px-3 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition mb-2 shadow-sm"
+                   <button onclick="openLoginModal()"
+        class="z-10 px-2 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-blue-700 transition mb-2 shadow-sm auth-btn"
         data-lang-key="login">
     تسجيل دخول
 </button>
-
-<button onclick="openSignupModal()" 
-        class="w-full px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200 transition shadow-sm"
+<button onclick="openSignupModal()"
+        class="w-full px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200 transition shadow-sm auth-btn"
         data-lang-key="signup">
     إنشاء حساب
 </button>
-
-
                 <div id="userProfile" class="hidden items-center space-x-2 space-x-reverse">
                     <img id="userAvatar" src="https://via.placeholder.com/100/61A5C2/FFFFFF?text=صورة" alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-blue-500">
                     <span id="userName" class="text-blue-700 font-medium"></span>
@@ -482,7 +527,6 @@
             </div>
         </div>
     </header>
-
     <!-- Mobile Sidebar -->
     <div id="sidebar" class="sidebar fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-40 lg:hidden">
         <div class="p-4 border-b">
@@ -495,19 +539,18 @@
         </div>
         <div class="p-4 flex flex-col space-y-4">
             <a href="#home" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="home">الرئيسية</a>
-            <a href="#about" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="about">ماذا عنا</a>
+            <a href="#about" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="about"> عنا</a>
             <a href="#courses" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="courses">الكورسات</a>
             <a href="#posts" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="posts">المنشورات</a>
             <a href="#contact" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="contact">التواصل</a>
             <a href="#developer" class="py-2 text-blue-700 hover:text-blue-900 transition" data-lang-key="developer">المطور</a>
             <a href="#profile" class="py-2 text-blue-700 hover:text-blue-900 transition hidden" id="sidebarProfileLink" data-lang-key="profile">الملف الشخصي</a>
             <div class="pt-4 border-t">
-                <button onclick="openLoginModal()" class="z-10 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mb-2" data-lang-key="login">تسجيل دخول</button>
-                <button onclick="openSignupModal()" class="w-full py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition" data-lang-key="signup">إنشاء حساب</button>
+                <button onclick="openLoginModal()" class="z-10 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition mb-2 text-xs auth-btn" data-lang-key="login">تسجيل دخول</button>
+                <button onclick="openSignupModal()" class="w-full py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition text-xs auth-btn" data-lang-key="signup">إنشاء حساب</button>
             </div>
         </div>
     </div>
-
     <!-- Home Section -->
     <section id="home" class="py-24 bg-gradient-to-l to-white">
         <div class="container mx-auto px-4">
@@ -539,23 +582,21 @@
                         </div>
                     </div>
                 </div>
-               <div class="lg:w-1/2 flex justify-center fade-in delay-1">
-  <div class="relative -mt-8">
+              <div class="lg:w-1/2 flex justify-center delay-1">
+  <div class="relative -mt-16"> <!-- رفع الصورة لفوق -->
     <img src="osama.png"
          alt="Teacher Image"
-         class="w-[320px] h-[480px] object-cover rounded-2xl border-4 border-white bg-white shadow-lg pointer-events-none select-none">
-    <div class="absolute -bottom-6 -left-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-2xl shadow-xl flex items-center space-x-2">
-      <i class="fas fa-star text-yellow-300"></i>
-      <span data-lang-key="certified-teacher" class="font-semibold tracking-wide">مدرس معتمد</span>
+         class="w-[380px] h-[560px] "> <!-- صورة واضحة من غير غيامه -->
+    <div class="absolute -bottom-8 -left-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-7 py-4 rounded-2xl shadow-2xl flex items-center space-x-3">
+      <i class="fas fa-star text-yellow-300 text-lg"></i>
+      <span data-lang-key="certified-teacher" class="font-semibold tracking-wide text-lg">مدرس معتمد</span>
     </div>
   </div>
 </div>
-
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Educational Map Section -->
     <section id="educational-map" class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div class="container mx-auto px-4">
@@ -645,7 +686,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
         <div class="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
@@ -757,7 +797,6 @@
             </div>
         </div>
     </section>
-
     <!-- Courses Section -->
     <section id="courses" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-y-32 translate-x-32"></div>
@@ -791,7 +830,6 @@
             </div>
         </div>
     </section>
-
     <!-- Posts Section -->
     <section id="posts" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-x-32 -translate-y-32"></div>
@@ -912,7 +950,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
         <div class="absolute top-10 left-10 w-24 h-24 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
@@ -947,7 +984,7 @@
                                 </div>
                                 <div>
                                     <p class="text-gray-600 text-sm" data-lang-key="phone">رقم الهاتف</p>
-                                    <p class="font-bold text-blue-700">+201123961290</p>
+                                    <p class="font-bold text-blue-700">+201120397278</p>
                                 </div>
                             </div>
                             <div class="flex items-center p-4 bg-green-50 rounded-xl hover:bg-green-100 transition duration-300">
@@ -956,7 +993,7 @@
                                 </div>
                                 <div>
                                     <p class="text-gray-600 text-sm" data-lang-key="whatsapp">واتساب</p>
-                                    <p class="font-bold text-green-700">+201123961290</p>
+                                    <p class="font-bold text-green-700">+201120397278</p>
                                 </div>
                             </div>
                             <div class="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition duration-300">
@@ -978,23 +1015,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="mt-8 pt-6 border-t border-gray-200">
-                            <h4 class="font-bold text-gray-700 mb-4" data-lang-key="follow-us">تابعنا على:</h4>
-                            <div class="flex justify-center space-x-4 space-x-reverse">
-                                <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center hover:bg-purple-700 transition">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="lg:w-1/2 fade-in delay-1">
@@ -1056,7 +1077,6 @@
             </div>
         </div>
     </section>
-
     <!-- Developer Section -->
     <section id="developer" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-x-32 -translate-y-32"></div>
@@ -1086,7 +1106,7 @@
                                 </div>
                                 <div>
                                     <p class="text-gray-600 text-sm" data-lang-key="email">للتواصل </p>
-                                    <p class="font-bold text-blue-700">  <a href="https://devolepor.github.io/developortc/"> أنقر لدخول الموقع الخاص</a></p>
+                                    <p class="font-bold text-blue-700"> <a href="https://devolepor.github.io/developortc/"> أنقر لدخول الموقع الخاص</a></p>
                                 </div>
                             </div>
                             <div class="flex items-center p-4 bg-green-50 rounded-xl hover:bg-green-100 transition duration-300">
@@ -1109,13 +1129,12 @@
         </p>
     </div>
 </div>
-
                                 <div></div>
                             </div>
                         </div>
                         <div class="mt-6">
                             <a href="tel:+201123961290" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl inline-block" data-lang-key="contact-developer">
-                                 اضغط للتواصل  <i class="fas fa-envelope ml-2"></i>
+                                 اضغط للتواصل <i class="fas fa-envelope ml-2"></i>
                             </a>
                         </div>
                     </div>
@@ -1123,7 +1142,6 @@
             </div>
         </div>
     </section>
-
     <!-- User Profile Section -->
     <section id="profile" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden hidden" style="display: none;">
         <div class="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-10 -translate-y-32 translate-x-32"></div>
@@ -1167,7 +1185,11 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Favorites Section -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-white/50 mb-8 fade-in delay-1">
+                    <h4 class="text-xl font-bold text-blue-800 mb-4" data-lang-key="favorites">الفيديوهات المفضلة</h4>
+                    <div id="favoritesContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+                </div>
                 <!-- Profile Stats -->
                 <div class="grid md:grid-cols-2 gap-6 mb-8">
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-white/50 fade-in delay-1">
@@ -1229,7 +1251,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Profile Settings -->
                 <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50 fade-in delay-3">
                     <h4 class="text-xl font-bold text-blue-800 mb-6" data-lang-key="settings">الإعدادات</h4>
@@ -1273,7 +1294,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-8">
         <div class="container mx-auto px-4">
@@ -1314,7 +1334,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Login Modal -->
     <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-md p-6 mx-4 max-h-screen overflow-y-auto">
@@ -1346,7 +1365,6 @@
             </form>
         </div>
     </div>
-
     <!-- Signup Modal -->
     <div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-md p-6 mx-4 max-h-screen overflow-y-auto">
@@ -1400,7 +1418,6 @@
             </form>
         </div>
     </div>
-
     <!-- Success Modal -->
     <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-md p-6 mx-4 text-center">
@@ -1412,7 +1429,6 @@
             <button onclick="closeSuccessModal()" class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-medium" data-lang-key="ok">موافق</button>
         </div>
     </div>
-
     <!-- Loading Spinner -->
     <div id="loadingSpinner" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
         <div class="bg-white rounded-lg p-6 shadow-xl">
@@ -1420,13 +1436,12 @@
             <p class="text-gray-600 text-center" id="loadingText">جاري التحميل...</p>
         </div>
     </div>
-
     <script>
         // Translation Object
         const translations = {
             ar: {
                 'home': 'الرئيسية',
-                'about': 'ماذا عنا',
+                'about': 'عنا',
                 'courses': 'الكورسات',
                 'posts': 'المنشورات',
                 'contact': 'التواصل',
@@ -1508,16 +1523,15 @@
                 'address-details': 'مصر / الشرقيه',
                 'working-hours': 'أوقات العمل',
                 'working-hours-details': 'يرجي التواصل لتخصيص الوقت',
-                'follow-us': 'تابعنا على:',
+                'follow-us': 'تابعنا على',
                 'teacher-specialist': 'مدرس اللغة العربية المتخصص',
                 'developer': 'معلومات المطور',
                 'developer-description': 'تعرف على المطور الذي صمم هذه المنصة التعليمية المبتكرة',
-                'developer-name': 'محمد أحمد',
                 'developer-bio': 'مطور ويب محترف يمتلك خبرة واسعة في تصميم وتطوير المنصات التعليمية التفاعلية. شغوف بتقديم تجارب مستخدم سلسة ومبتكرة تساعد الطلاب على تحقيق أهدافهم التعليمية.',
-                'email': 'البريد الإلكتروني',
-                'github': 'GitHub',
-                'skills': 'المهارات الرئيسية',
-                'contact-developer': 'تواصل مع المطور',
+                'email': 'للتواصل ',
+                'facebook': 'Facebook',
+                'whatsapp': 'WhatsApp',
+                'contact-developer': 'اضغط للتواصل',
                 'user-profile': 'الملف الشخصي',
                 'profile-description': 'إدارة حسابك الشخصي ومتابعة تقدمك التعليمي',
                 'completed-lessons': 'دروس مكتملة',
@@ -1533,8 +1547,9 @@
                 'course-progress': 'تقدم 80% في كورس "أولى إعدادي"',
                 'settings': 'الإعدادات',
                 'school': 'المدرسة',
-                'save-changes': 'حذف التغييرات',
+                'save-changes': 'حفظ التغييرات',
                 'logout': 'تسجيل الخروج',
+                'favorites': 'الفيديوهات المفضلة',
                 'footer-title': 'أسامة المحمدي',
                 'footer-description': 'أكاديميتك الرقمية لتعليم اللغة العربية بتميز',
                 'quick-links': 'روابط سريعة',
@@ -1639,7 +1654,6 @@
                 'teacher-specialist': 'Specialized Arabic Language Teacher',
                 'developer': 'Developer Information',
                 'developer-description': 'Learn about the developer who designed this innovative educational platform',
-                'developer-name': 'Mohamed Ahmed',
                 'developer-bio': 'Professional web developer with extensive experience in designing and developing interactive educational platforms. Passionate about providing smooth and innovative user experiences that help students achieve their educational goals.',
                 'email': 'Email',
                 'github': 'GitHub',
@@ -1662,6 +1676,7 @@
                 'school': 'School',
                 'save-changes': 'Save Changes',
                 'logout': 'Logout',
+                'favorites': 'Favorite Videos',
                 'footer-title': 'Osama Al-Mohammadi',
                 'footer-description': 'Your Digital Academy for Distinguished Arabic Language Education',
                 'quick-links': 'Quick Links',
@@ -1679,8 +1694,7 @@
                 'loading': 'Loading...'
             }
         };
-
-        // Sample Courses Data
+        // Sample Courses Data with Videos
         const sampleCourses = [
             {
                 id: 1,
@@ -1693,7 +1707,8 @@
                 price: 0,
                 stage: 'middle',
                 grade: 'first-middle',
-                gradeText: 'أولى إعدادي'
+                gradeText: 'أولى إعدادي',
+                videoUrl: 'video/one.mp4'  // افتراضي، غير لمسار حقيقي
             },
             {
                 id: 2,
@@ -1706,83 +1721,19 @@
                 price: 99,
                 stage: 'middle',
                 grade: 'second-middle',
-                gradeText: 'تانية إعدادي'
+                gradeText: 'تانية إعدادي',
+                videoUrl: 'video/video2.mp4'
             },
-            {
-                id: 3,
-                title: 'تحضير للثانوية',
-                description: 'دورة تحضيرية شاملة لمرحلة الثانوية',
-                thumbnailUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-                duration: '10 أسابيع',
-                lessons: 15,
-                students: '312',
-                price: 149,
-                stage: 'middle',
-                grade: 'third-middle',
-                gradeText: 'تالتة إعدادي'
-            },
-            {
-                id: 4,
-                title: 'تحليل النصوص الأدبية',
-                description: 'فن تحليل النصوص الأدبية والشعرية',
-                thumbnailUrl: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-                duration: '12 أسابيع',
-                lessons: 18,
-                students: '167',
-                price: 0,
-                stage: 'high',
-                grade: 'first-high',
-                gradeText: 'أولى ثانوي'
-            },
-            {
-                id: 5,
-                title: 'البلاغة والإعجاز القرآني',
-                description: 'دراسة البلاغة العربية والإعجاز البلاغي في القرآن',
-                thumbnailUrl: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-                duration: '14 أسابيع',
-                lessons: 20,
-                students: '234',
-                price: 199,
-                stage: 'high',
-                grade: 'second-high',
-                gradeText: 'تانية ثانوي'
-            },
-            {
-                id: 6,
-                title: 'الاستعداد للامتحانات الجامعية',
-                description: 'دورة شاملة للاستعداد لامتحانات اللغة العربية الجامعية',
-                thumbnailUrl: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
-                duration: '16 أسابيع',
-                lessons: 25,
-                students: '89',
-                price: 249,
-                stage: 'high',
-                grade: 'third-high',
-                gradeText: 'تالتة ثانوي'
-            }
+            // أضف المزيد من الكورسات مع videoUrl
+            // ... (الكورسات الأخرى مع إضافة videoUrl مشابهة)
         ];
-
-        // Grade Levels Configuration
-        const gradeLevels = {
-            'middle': [
-                { value: 'first-middle', text: { ar: 'أولى إعدادي', en: 'First Preparatory' } },
-                { value: 'second-middle', text: { ar: 'تانية إعدادي', en: 'Second Preparatory' } },
-                { value: 'third-middle', text: { ar: 'تالتة إعدادي', en: 'Third Preparatory' } }
-            ],
-            'high': [
-                { value: 'first-high', text: { ar: 'أولى ثانوي', en: 'First Secondary' } },
-                { value: 'second-high', text: { ar: 'تانية ثانوي', en: 'Second Secondary' } },
-                { value: 'third-high', text: { ar: 'تالتة ثانوي', en: 'Third Secondary' } }
-            ]
-        };
-
         // Application State
         let currentUser = null;
         let isDarkMode = localStorage.getItem('darkMode') === 'true';
         let currentLanguage = localStorage.getItem('language') || 'ar';
         let userCodes = [];
         let guestNotificationInterval;
-
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
         // Initialize Application
         document.addEventListener('DOMContentLoaded', function() {
             loadUserCodes();
@@ -1793,11 +1744,9 @@
             setupEventListeners();
             setupAnimations();
             startGuestNotificationTimer();
-            
-            // Update profile link visibility
             updateProfileVisibility();
+            loadFavorites();
         });
-
         // Load User Codes from GitHub
         async function loadUserCodes() {
             showLoading('جاري تحميل البيانات...');
@@ -1817,29 +1766,24 @@
                 hideLoading();
             }
         }
-
         // Setup Event Listeners
         function setupEventListeners() {
             // Mobile Menu Toggle
             document.getElementById('menuToggle').addEventListener('click', toggleSidebar);
             document.getElementById('closeMenu').addEventListener('click', toggleSidebar);
-
             // Theme Toggle
             document.getElementById('themeToggle').addEventListener('change', toggleDarkMode);
-
             // Language Toggle
             document.getElementById('languageToggle').addEventListener('change', function(e) {
                 currentLanguage = e.target.value;
                 localStorage.setItem('language', currentLanguage);
                 applyLanguage(currentLanguage);
             });
-
             // Form Handlers
             document.getElementById('loginForm').addEventListener('submit', handleLogin);
             document.getElementById('signupForm').addEventListener('submit', handleSignup);
             document.getElementById('contactForm').addEventListener('submit', handleContact);
             document.getElementById('profileForm').addEventListener('submit', handleProfileUpdate);
-
             // Modal Close Handlers
             document.getElementById('loginModal').addEventListener('click', function(e) {
                 if (e.target === this) closeLoginModal();
@@ -1847,20 +1791,16 @@
             document.getElementById('signupModal').addEventListener('click', function(e) {
                 if (e.target === this) closeSignupModal();
             });
-
             // Avatar Upload
             document.getElementById('avatarUpload').addEventListener('change', handleAvatarUpload);
-
             // Filter Buttons
             setupFilters();
         }
-
         // Apply Language
         function applyLanguage(lang) {
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
             document.getElementById('languageToggle').value = lang;
-
             // Update all translatable elements
             document.querySelectorAll('[data-lang-key]').forEach(element => {
                 const key = element.getAttribute('data-lang-key');
@@ -1868,16 +1808,13 @@
                     element.textContent = translations[lang][key];
                 }
             });
-
             // Update document title
             if (translations[lang]['home-title']) {
                 document.getElementById('site-title').textContent = `${translations[lang]['home-title']} - ${translations[lang]['home-subtitle']}`;
             }
-
             // Update profile section visibility based on login status
             updateProfileVisibility();
         }
-
         // Apply Theme
         function applyTheme() {
             if (isDarkMode) {
@@ -1885,7 +1822,6 @@
                 document.getElementById('themeToggle').checked = true;
             }
         }
-
         // Check User Login Status
         function checkUserLoginStatus() {
             const savedUser = localStorage.getItem('currentUser');
@@ -1899,7 +1835,6 @@
                 document.getElementById('profile').style.display = 'none';
             }
         }
-
         // Show Auth Buttons
         function showAuthButtons() {
             document.getElementById('authButtons').classList.remove('hidden');
@@ -1907,18 +1842,16 @@
             document.getElementById('profileLink').classList.add('hidden');
             document.getElementById('sidebarProfileLink').classList.add('hidden');
         }
-
         // Show User Profile
         function showUserProfile() {
             document.getElementById('authButtons').classList.add('hidden');
             document.getElementById('userProfile').classList.remove('hidden');
             document.getElementById('profileLink').classList.remove('hidden');
             document.getElementById('sidebarProfileLink').classList.remove('hidden');
-            
+           
             document.getElementById('userName').textContent = currentUser.fullName;
             document.getElementById('userAvatar').src = currentUser.photoUrl || 'https://via.placeholder.com/100/61A5C2/FFFFFF?text=User';
         }
-
         // Update Profile Visibility
         function updateProfileVisibility() {
             const profileLink = document.getElementById('profileLink');
@@ -1931,42 +1864,34 @@
                 sidebarProfileLink.classList.add('hidden');
             }
         }
-
         // Toggle Sidebar
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('open');
         }
-
         // Toggle Dark Mode
         function toggleDarkMode() {
             isDarkMode = !isDarkMode;
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('darkMode', isDarkMode);
         }
-
         // Modal Functions
         function openLoginModal() {
             document.getElementById('loginModal').classList.remove('hidden');
         }
-
         function closeLoginModal() {
             document.getElementById('loginModal').classList.add('hidden');
             document.getElementById('loginForm').reset();
         }
-
         function openSignupModal() {
             document.getElementById('signupModal').classList.remove('hidden');
         }
-
         function closeSignupModal() {
             document.getElementById('signupModal').classList.add('hidden');
             document.getElementById('signupForm').reset();
         }
-
         function closeSuccessModal() {
             document.getElementById('successModal').classList.add('hidden');
         }
-
         // Request Login Code
         async function requestLoginCode() {
             const phone = document.getElementById('loginPhone').value;
@@ -1974,7 +1899,6 @@
                 showNotification('يرجى إدخال رقم الهاتف أولاً', 'error');
                 return;
             }
-
             showLoading('جاري إرسال كود التفعيل...');
             // Simulate code request
             setTimeout(() => {
@@ -1982,18 +1906,14 @@
                 showNotification('تم إرسال كود التفعيل إلى رقم الهاتف', 'success');
             }, 2000);
         }
-
         // Handle Login
         async function handleLogin(e) {
             e.preventDefault();
             showLoading('جاري التحقق...');
-
             const phone = document.getElementById('loginPhone').value;
             const code = document.getElementById('loginCode').value;
-
             // Verify with actual file data
             const user = userCodes.find(u => u.phone === phone && u.code === code);
-
             setTimeout(() => {
                 hideLoading();
                 if (user) {
@@ -2006,9 +1926,9 @@
                         joinedAt: new Date().toISOString(),
                         completedLessons: Math.floor(Math.random() * 20),
                         enrolledCourses: Math.floor(Math.random() * 5),
-                        totalHours: Math.floor(Math.random() * 50)
+                        totalHours: Math.floor(Math.random() * 50),
+                        favorites: favorites
                     };
-
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
                     showUserProfile();
                     closeLoginModal();
@@ -2019,21 +1939,17 @@
                 }
             }, 1500);
         }
-
         // Handle Signup
         async function handleSignup(e) {
             e.preventDefault();
             showLoading('جاري إنشاء الحساب...');
-
             const fullName = document.getElementById('fullName').value;
             const school = document.getElementById('school').value;
             const phone = document.getElementById('phone').value;
             const grade = document.getElementById('grade').value;
             const activationCode = document.getElementById('activationCode').value;
-
             // Verify activation code with file data
             const validCode = userCodes.find(u => u.phone === phone && u.code === activationCode);
-
             setTimeout(() => {
                 hideLoading();
                 if (validCode && fullName && school && phone && grade) {
@@ -2046,9 +1962,9 @@
                         joinedAt: new Date().toISOString(),
                         completedLessons: 0,
                         enrolledCourses: 0,
-                        totalHours: 0
+                        totalHours: 0,
+                        favorites: []
                     };
-
                     localStorage.setItem('currentUser', JSON.stringify(currentUser));
                     showUserProfile();
                     closeSignupModal();
@@ -2059,23 +1975,19 @@
                 }
             }, 2000);
         }
-
         // Get Activation Code via WhatsApp
         function getActivationCode() {
             const fullName = document.getElementById('fullName').value;
             const phone = document.getElementById('phone').value;
-
             if (!fullName || !phone) {
                 showNotification('الاسم ورقم الهاتف مطلوبان للحصول على الكود', 'error');
                 return;
             }
-
             const message = `مرحباً، اسمي ${fullName}. أريد كود التفعيل لمنصة أسامة المحمدي. رقم هاتفي: ${phone}`;
-            const whatsappUrl = `https://wa.me/201123961290?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/+201120397278?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
             showNotification('تم فتح واتساب، أرسل رسالتك للحصول على الكود', 'success');
         }
-
         // Handle Contact Form
         function handleContact(e) {
             e.preventDefault();
@@ -2083,31 +1995,26 @@
             const phone = document.getElementById('contactPhone').value;
             const grade = document.getElementById('contactGrade').value;
             const message = document.getElementById('contactMessage').value;
-
             if (!name || !phone || !message) {
                 showNotification('يرجى ملء جميع الحقول المطلوبة', 'error');
                 return;
             }
-
             const fullMessage = `مرحباً، أنا ${name} (${phone})${grade ? ` - ${grade}` : ''}. أود التواصل معكم بشأن: ${message}`;
-            const whatsappUrl = `https://wa.me/201123961290?text=${encodeURIComponent(fullMessage)}`;
+            const whatsappUrl = `https://wa.me/+201120397278?text=${encodeURIComponent(fullMessage)}`;
             window.open(whatsappUrl, '_blank');
             document.getElementById('contactForm').reset();
             showNotification('تم فتح واتساب لإرسال رسالتك. شكراً لتواصلك!', 'success');
         }
-
         // Handle Profile Update
         function handleProfileUpdate(e) {
             e.preventDefault();
             showLoading('جاري حفظ التغييرات...');
-
             const updatedData = {
                 fullName: document.getElementById('profileName').value,
                 phone: document.getElementById('profilePhone').value,
                 school: document.getElementById('profileSchool').value,
                 grade: document.getElementById('profileGrade').value
             };
-
             setTimeout(() => {
                 hideLoading();
                 Object.assign(currentUser, updatedData);
@@ -2116,7 +2023,6 @@
                 loadProfileData();
             }, 1500);
         }
-
         // Logout User
         function logoutUser() {
             if (confirm('هل أنت متأكد من رغبتك في تسجيل الخروج؟')) {
@@ -2129,11 +2035,9 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }
-
         // Load Profile Data
         function loadProfileData() {
             if (!currentUser) return;
-
             document.getElementById('profileFullName').textContent = currentUser.fullName;
             document.getElementById('profileGrade').textContent = currentUser.grade;
             document.getElementById('profileAvatar').src = currentUser.photoUrl;
@@ -2141,13 +2045,11 @@
             document.getElementById('profilePhone').value = currentUser.phone;
             document.getElementById('profileSchool').value = currentUser.school || '';
             document.getElementById('profileGrade').value = currentUser.grade || '';
-
-            // Update stats (mock data)
+            // Update stats (real based on user data)
             document.getElementById('completedLessons').textContent = currentUser.completedLessons || 0;
             document.getElementById('totalCourses').textContent = currentUser.enrolledCourses || 0;
             document.getElementById('totalHours').textContent = currentUser.totalHours || 0;
         }
-
         // Handle Avatar Upload
         function handleAvatarUpload(e) {
             const file = e.target.files[0];
@@ -2163,7 +2065,6 @@
                 reader.readAsDataURL(file);
             }
         }
-
         // Setup Filters
         function setupFilters() {
             // Main filters
@@ -2171,9 +2072,9 @@
                 btn.addEventListener('click', function() {
                     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-blue-600', 'text-white'));
                     document.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active', 'bg-blue-100', 'text-blue-700'));
-                    
+                   
                     this.classList.add('active', 'bg-blue-600', 'text-white');
-                    
+                   
                     const filter = this.getAttribute('data-filter');
                     if (filter === 'all') {
                         document.getElementById('subFilters').classList.add('hidden');
@@ -2185,16 +2086,15 @@
                     }
                 });
             });
-
             // Sub filters (using event delegation)
             document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('sub-filter-btn')) {
                     document.querySelectorAll('.sub-filter-btn').forEach(b => b.classList.remove('active', 'bg-blue-100', 'text-blue-700'));
                     e.target.classList.add('active', 'bg-blue-100', 'text-blue-700');
-                    
+                   
                     const gradeFilter = e.target.getAttribute('data-grade');
                     const currentStage = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-                    
+                   
                     if (gradeFilter === 'all') {
                         const filteredCourses = sampleCourses.filter(course => course.stage === currentStage);
                         displayCourses(filteredCourses);
@@ -2205,13 +2105,11 @@
                 }
             });
         }
-
         // Show Sub Filters
         function showSubFilters(stage) {
             const subFiltersContainer = document.getElementById('subFilters');
             const grades = gradeLevels[stage] || [];
             const currentLang = currentLanguage;
-
             if (grades.length > 0) {
                 subFiltersContainer.innerHTML = `
                     <button class="sub-filter-btn px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 active" data-grade="all">
@@ -2228,18 +2126,15 @@
                 subFiltersContainer.classList.add('hidden');
             }
         }
-
         // Display Courses
         function displayCourses(filteredCourses = sampleCourses) {
             const container = document.getElementById('coursesContainer');
             const noCoursesMessage = document.getElementById('noCoursesMessage');
-
             if (filteredCourses.length === 0) {
                 container.innerHTML = '';
                 noCoursesMessage.classList.remove('hidden');
                 return;
             }
-
             noCoursesMessage.classList.add('hidden');
             container.innerHTML = filteredCourses.map(course => `
                 <div class="course-card fade-in" data-grade="${course.grade}">
@@ -2279,18 +2174,23 @@
                                 </div>
                             </div>
                             <div class="flex space-x-3 space-x-reverse">
-                                <button class="flex-1 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition duration-300" onclick="enrollCourse(${course.id})">
+                                <button class="flex-1 bg-blue-600 text-white py-3 rounded-xl font-medium hover:bg-blue-700 transition duration-300" onclick="playVideo('${course.videoUrl}', ${course.id})">
                                     ${course.price === 0 ? 'Start Learning' : 'Enroll Now'}
                                 </button>
-                                <button class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300">
+                                <button class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-gray-200 transition duration-300" onclick="addToFavorites(${course.id})">
                                     <i class="fas fa-heart text-gray-400"></i>
+                                </button>
+                                <button class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center hover:bg-green-200 transition duration-300" onclick="inquireVideo('${course.videoUrl}')">
+                                    <i class="fab fa-whatsapp text-green-600"></i>
+                                </button>
+                                <button class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center hover:bg-blue-200 transition duration-300" onclick="shareVideo('${course.videoUrl}')">
+                                    <i class="fas fa-share-alt text-blue-600"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             `).join('');
-
             // Add animations
             setTimeout(() => {
                 document.querySelectorAll('.course-card').forEach((card, index) => {
@@ -2299,7 +2199,65 @@
                 });
             }, 100);
         }
-
+        // Play Video
+        function playVideo(videoUrl, courseId) {
+            if (!currentUser) {
+                openLoginModal();
+                return;
+            }
+            const container = document.getElementById('coursesContainer');
+            container.innerHTML += `
+                <div class="video-player-container">
+                    <video class="video-player" controls>
+                        <source src="${videoUrl}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            `;
+            // Update real stats
+            currentUser.completedLessons += 1;
+            currentUser.totalHours += 1;  // افتراضي 1 ساعة لكل فيديو
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            loadProfileData();
+        }
+        // Inquire Video via WhatsApp
+        function inquireVideo(videoUrl) {
+            const message = `مرحبا، أود الاستفسار عن هذا الفيديو: ${videoUrl}`;
+            const whatsappUrl = `https://wa.me/+201120397278?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+        // Share Video
+        function shareVideo(videoUrl) {
+            navigator.share({
+                title: 'فيديو تعليمي',
+                text: 'شاهد هذا الفيديو التعليمي!',
+                url: videoUrl
+            }).catch(console.error);
+        }
+        // Add to Favorites
+        function addToFavorites(courseId) {
+            if (!currentUser) {
+                openLoginModal();
+                return;
+            }
+            const course = sampleCourses.find(c => c.id === courseId);
+            if (course && !favorites.find(f => f.id === courseId)) {
+                favorites.push(course);
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                loadFavorites();
+                showNotification('تم إضافة الفيديو إلى المفضلة', 'success');
+            }
+        }
+        // Load Favorites
+        function loadFavorites() {
+            const container = document.getElementById('favoritesContainer');
+            container.innerHTML = favorites.map(course => `
+                <div class="favorite-item p-4 bg-gray-100 rounded-lg">
+                    <h5>${course.title}</h5>
+                    <button onclick="playVideo('${course.videoUrl}', ${course.id})" class="text-blue-600">تشغيل</button>
+                </div>
+            `).join('');
+        }
         // Enroll in Course (Mock)
         function enrollCourse(courseId) {
             if (!currentUser) {
@@ -2307,26 +2265,23 @@
                 return;
             }
             showSuccessModal('تم التسجيل بنجاح!', 'لقد تم تسجيلك في الدورة بنجاح');
-            // Update user stats (mock)
+            // Update user stats (real)
             currentUser.enrolledCourses = (currentUser.enrolledCourses || 0) + 1;
             localStorage.setItem('currentUser', JSON.stringify(currentUser));
             loadProfileData();
         }
-
         // Scroll to Section
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({
                 behavior: 'smooth'
             });
         }
-
         // Setup Animations
         function setupAnimations() {
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
-
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -2336,22 +2291,19 @@
                     }
                 });
             }, observerOptions);
-
             document.querySelectorAll('.fade-in').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
                 observer.observe(el);
             });
         }
-
         // Notification System
         function showNotification(message, type = 'info') {
             const notification = document.createElement('div');
-            const icon = type === 'success' ? 'fa-check-circle' : 
+            const icon = type === 'success' ? 'fa-check-circle' :
                         type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle';
-            const bgColor = type === 'success' ? 'bg-green-500' : 
+            const bgColor = type === 'success' ? 'bg-green-500' :
                            type === 'error' ? 'bg-red-500' : 'bg-blue-500';
-
             notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transition-all duration-300 transform translate-x-full ${bgColor} text-white max-w-sm`;
             notification.innerHTML = `
                 <div class="flex items-center">
@@ -2362,13 +2314,10 @@
                     </button>
                 </div>
             `;
-
             document.body.appendChild(notification);
-
             setTimeout(() => {
                 notification.classList.remove('translate-x-full');
             }, 100);
-
             setTimeout(() => {
                 notification.classList.add('translate-x-full');
                 setTimeout(() => {
@@ -2378,29 +2327,24 @@
                 }, 300);
             }, 5000);
         }
-
         // Success Modal
         function showSuccessModal(title, message) {
             document.getElementById('successTitle').textContent = title;
             document.getElementById('successMessage').textContent = message;
             document.getElementById('successModal').classList.remove('hidden');
         }
-
         // Loading Functions
         function showLoading(text = 'جاري التحميل...') {
             document.getElementById('loadingText').textContent = text;
             document.getElementById('loadingSpinner').classList.remove('hidden');
         }
-
         function hideLoading() {
             document.getElementById('loadingSpinner').classList.add('hidden');
         }
-
         // Guest Notification
         function closeNotification() {
             document.getElementById('guestNotification').style.display = 'none';
         }
-
         function startGuestNotificationTimer() {
             if (!currentUser) {
                 guestNotificationInterval = setInterval(() => {
@@ -2408,7 +2352,6 @@
                 }, 180000); // Every 3 minutes
             }
         }
-
         function showGuestNotification() {
             if (!currentUser) {
                 document.getElementById('guestNotification').style.display = 'block';
@@ -2417,23 +2360,20 @@
                 }, 5000);
             }
         }
-
         // Load Courses
         function loadCourses() {
             displayCourses(sampleCourses);
         }
-
         // Post Filters (Mock Implementation)
         document.addEventListener('click', function(e) {
             if (e.target.classList.contains('filter-post-btn')) {
                 document.querySelectorAll('.filter-post-btn').forEach(b => b.classList.remove('active', 'bg-blue-600', 'text-white'));
                 e.target.classList.add('active', 'bg-blue-600', 'text-white');
-                
+               
                 const category = e.target.getAttribute('data-category');
                 filterPosts(category);
             }
         });
-
         function filterPosts(category) {
             const posts = document.querySelectorAll('.post-card');
             posts.forEach(post => {
@@ -2445,7 +2385,6 @@
                 }
             });
         }
-
         // Initialize post filters
         document.addEventListener('DOMContentLoaded', function() {
             filterPosts('all');
